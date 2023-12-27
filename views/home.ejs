@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+<%- include("partials/head.ejs") %>
+</head>
+
+<body>
+<%- include("partials/header.ejs") %>
+
+<main>
+    
+   <section>
+    <%- include("partials/menu.ejs") %>
+
+      <article id="direito">
+           <h1>POST</h1>
+
+           
+      <div class="posts"> 
+         <%teste.forEach((list) => { %>
+           <div class="post">         
+
+              <h3><%=list.title%></h3>
+              <p><%=list.assunto%></p>
+              
+               <% if(list.stars){ %>
+                        <% for( let index = 0; index < list.stars; index++ ) { %>
+                           <img id="teste" src="/imagens/images.jpeg" >   
+                        <% } %>
+               <% } %> 
+                     
+            </div>
+            
+
+         <%  })  %>
+     </div>
+   
+
+      </article>
+   </section>
+s
+
+</main>
+
+<%- include("partials/foot.ejs") %>
+</body>
+</html>

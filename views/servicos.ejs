@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+<%- include("partials/head.ejs") %>
+<link rel="stylesheet" href="/styler/servisos.css">
+</head>
+
+<body>
+<%- include("partials/header.ejs") %>
+
+<main>
+    
+   <section id="servisos">
+    <%- include("partials/menu.ejs") %>
+
+    <div id="ser02">
+
+      <% if(cadastrados){%>
+          <h1>cadastros realizadocom sucesso</h1>
+    
+            <% } %>
+    
+
+      <form id="formulario" action="/salvar-post" method="post">
+
+         <div>
+            <label for="cadastrou">NOME COMPLETO</label> 
+            <input name="nome_completo" type="text" id="cadastrou" placeholder="digite aqui"> 
+         </div>
+
+         <div>
+         
+             <label for="data">IDADE</label> 
+            <input name="idade" type="date" id="data" placeholder="data"  >
+          </div>
+
+         <div> 
+            <label for="cpf">CPF</label> 
+            <input name="CPF" type="number" id="cpf" placeholder="000-000-000-00"  > 
+         </div>
+
+         <button  type="submit" id="enviar" >enviar</button >
+
+        </form>
+  
+
+    </div>
+
+ </section>
+
+</main>
+<script src="/serv/servi.js"></script>
+<%- include("partials/foot.ejs") %>
+</body>
+</html>

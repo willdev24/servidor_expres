@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: rgb(168, 155, 155);
+}
+
+#servisos{
+
+    padding: 20px 30px;
+}
+
+#ser02{
+    padding: 100px 100px;
+}
+
+#formulario , button{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+label{
+background-color: rgb(129, 219, 219);
+padding: 7px 20px;
+
+
+}
+
+input{
+   font-size: 15px;
+    padding: 05px 05px;
+}
+
+div{
+    margin-top: 10px;
+}
+
+button{
+    padding: 10px 25px;
+    margin-top: 10px;
+}
+
+h1{
+    margin-left: 200px;
+    color: blanchedalmond;
+    
+}
