@@ -23,7 +23,7 @@ app.use(express.urlencoded({extended:true}))
 //rotas
 app.get('/', (req, res) =>{
     res.render('index', {
-        title:"vc que ta lendo eu voute comer",
+        title:"heii",
   
 })
 
@@ -55,7 +55,7 @@ app.get('/', (req, res) =>{
 
 ;
             app.get('/servicos',(req, res) =>{
-               const{c}= req.body
+               const{c}= req.query
                 
                res.render("servicos", {
                     title:"gabriela rabuda gostosaa",
